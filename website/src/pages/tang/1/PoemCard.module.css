@@ -1,0 +1,166 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+/* styles.module.css */
+
+
+.card {
+  background-color: #fff; /* 白色背景 */
+  border: 1px solid #ccc; /* 灰色边框 */
+  border-radius: 8px; /* 边框圆角 */
+  padding: 20px; /* 内边距 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 阴影效果 */
+  width: 350px; /* 宽度，可以根据需要调整 */
+  margin: 20px auto; /* 上下外边距，水平居中 */
+  text-align: center; /* 文本居中对齐 */
+}
+
+.card h2 {
+  font-size: 1.5em; /* 标题字体大小 */
+  color: #333; /* 标题颜色 */
+  margin-bottom: 10px; /* 标题下边距 */
+}
+
+.card p {
+  font-size: 1em; /* 段落字体大小 */
+  color: #666; /* 段落颜色 */
+  margin: 5px 0; /* 段落上下边距 */
+}
+
+.card strong {
+  font-weight: bold; /* 强调文本加粗 */
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Style for the "See More" button */
+.loadMoreButton {
+  background-color: #f794a4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  /* Center the button */
+  position: absolute; /* Float the button */
+  left: 50%;          /* Horizontally center */
+  transform: translateX(-50%); /* Adjust centering */
+  bottom: 20px;       /* Adjust the vertical position (floating near the bottom) */
+}
+
+.loadMoreButton:hover {
+  background-color: #f06576;
+}
+
+/* Make sure the parent container allows absolute positioning */
+.section {
+  position: relative; /* Parent container for button */
+  padding-bottom: 100px; /* Add some bottom padding to prevent overlapping content */
+}
+
+
+
+.topBanner {
+  font-size: 20px;
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topBannerTitle {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .topBannerTitle {
+    font-size: 40px;
+  }
+}
+
+.topBannerTitleText {
+  background: linear-gradient(
+    90deg,
+    rgb(131 58 180 / 100%) 0%,
+    rgb(253 29 29 / 100%) 50%,
+    rgb(252 176 69 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topBannerTitleText:hover {
+  border-bottom: solid 2px;
+  border-color: rgb(152 0 255);
+}
+
+html[data-theme='dark'] .topBannerTitleText {
+  background: linear-gradient(
+    90deg,
+    rgb(152 0 255) 0%,
+    rgb(246 41 41) 50%,
+    rgb(255 169 8) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topBannerDescription {
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .topBannerDescription {
+    font-size: 16px;
+    white-space: normal;
+  }
+}
+
+
+
+@keyframes jack-in-the-box {
+  0% {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
