@@ -443,6 +443,7 @@ export default async function createConfigAsync() {
           height: 32,
         },
         items: [
+          {to: 'map', label: 'maps', position: 'left'},
           {
             label: 'countries',
             position: 'left',
@@ -516,7 +517,7 @@ export default async function createConfigAsync() {
             items: [
               { label: 'Afghanistan', to: '/wudai/huajianji1' },
               { label: 'Cape Verde', to: '/wudai/huajianji2' },
-              { label: 'Cape Verde', to: '/wudai/huajianji3' },
+              { label: 'Germany ', to: '/wudai/huajianji3' },
               { label: 'Israel', to: '/wudai/huajianji4' }, 
               { label: 'Mexico', to: '/wudai/huajianji5' },  
               { label: 'Panama', to: '/wudai/huajianji6' },         
