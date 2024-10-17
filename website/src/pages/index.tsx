@@ -636,7 +636,7 @@ function Herotoken() {
 					  <span className={styles.separator}>•</span>
 					  <a href="https://app.meteora.ag/pools/9oRdiNMEPegLEmczr55zhTygRymQn44D7Ry5Cduj4VXv">Swap</a>
 				  </div>
-				  <a href="http://cat.543x.com/" className={styles.learnmore}>Learn more</a>
+				  <a href="http://www.41ii.com" className={styles.learnmore}>Learn more</a>
 				</div>
 			  </div>
 			  <div className={styles.appcard}>

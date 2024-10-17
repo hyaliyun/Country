@@ -7,74 +7,31 @@
 /* styles.module.css */
 
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 300px;
-  position: relative;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff; /* 白色背景 */
+  border: 1px solid #ccc; /* 灰色边框 */
+  border-radius: 8px; /* 边框圆角 */
+  padding: 20px; /* 内边距 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 阴影效果 */
+  width: 350px; /* 宽度，可以根据需要调整 */
+  margin: 20px auto; /* 上下外边距，水平居中 */
+  text-align: center; /* 文本居中对齐 */
 }
 
 .card h2 {
-  color: #FF9494;
-  border-bottom: 2px solid #FFD1D1;
-  padding-bottom: 10px;
-  margin-top: 0;
-  text-align: center;
+  font-size: 1.5em; /* 标题字体大小 */
+  color: #333; /* 标题颜色 */
+  margin-bottom: 10px; /* 标题下边距 */
 }
 
-.card .paragraphs {
-  margin-top: 10px;
-  color: #333;
-  line-height: 1.6;
-  text-align: center;
+.card p {
+  font-size: 1em; /* 段落字体大小 */
+  color: #666; /* 段落颜色 */
+  margin: 5px 0; /* 段落上下边距 */
 }
 
-.card .paragraphs p {
-  margin-bottom: 10px;
-}
-
-.card .author {
-  font-style: italic;
-  color: #8c4510;
-  text-align: right;
-  margin-top: 10px;
-}
-
-.seal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: #c14e1e;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Noto Serif SC', serif;
-  font-weight: bold;
-  color: #fff;
-  font-size: 20px;
-  opacity: 0.8;
+.card strong {
+  font-weight: bold; /* 强调文本加粗 */
 }
 
 .cardContainer {

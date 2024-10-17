@@ -23,7 +23,7 @@ function TopBanner() {
           <Translate
             id="homepage.banner.launch.newVersion"
             values={{ newVersion: announcedVersion }}>
-            {'Cape Verde'}
+            {'Germany '}
           </Translate>
         </Link>
         {'\xa0🥳'}
