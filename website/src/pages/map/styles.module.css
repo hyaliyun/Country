@@ -1,0 +1,160 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+/* styles.module.css */
+.featureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+/* Wrapper to ensure consistent image size */
+.imageWrapper {
+  width: 200px; /* Set the desired width for all images */
+  height: 150px; /* Set the desired height for all images */
+  background-color: #f0f0f0; /* Fallback background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Style for the image to ensure consistent scaling */
+.featureImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures the image scales without being cropped */
+  background-color: transparent;
+}
+
+/* Feature heading styling */
+.featureHeading {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .imageWrapper {
+    width: 150px;
+    height: 120px;
+  }
+
+  .featureHeading {
+    font-size: 1rem;
+  }
+}
+.loadMoreButton {
+  background-color: #f794a4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  /* Center the button */
+  position: absolute; /* Float the button */
+  left: 50%;          /* Horizontally center */
+  transform: translateX(-50%); /* Adjust centering */
+  bottom: 20px;       /* Adjust the vertical position (floating near the bottom) */
+}
+
+.loadMoreButton:hover {
+  background-color: #f06576;
+}
+
+.section {
+  position: relative; /* Parent container for button */
+  padding-bottom: 100px; /* Add some bottom padding to prevent overlapping content */
+}
+
+
+.topBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.topBannerLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #333;
+}
+
+.featureImage {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.featureHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    rgb(131 58 180 / 100%) 0%,
+    rgb(253 29 29 / 100%) 50%,
+    rgb(252 176 69 / 100%) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .featureHeading {
+    font-size: 1.5rem;
+  }
+
+  .featureImage {
+    max-width: 80px;
+  }
+}
+
+/* Map container styling */
+.mapContainer {
+  height: 70vh;
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Section and main layout */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.main {
+  padding: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mapContainer {
+    height: 50vh;
+  }
+
+  .section {
+    padding: 0 10px;
+  }
+}

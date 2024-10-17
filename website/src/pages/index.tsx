@@ -11,18 +11,17 @@ import Link from '@docusaurus/Link';
 import Translate, {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl, {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
-
 import Image from '@theme/IdealImage';
 import Layout from '@theme/Layout';
 import React from 'react';
 import Hero from './Hero/Hero';
 import Platforms from './Platforms/index';
+import MapComponent from './Platforms/map';
 import Tweet from '@site/src/components/Tweet';
 import Tweets, {type TweetItem} from '@site/src/data/tweets';
 import Quotes from '@site/src/data/quotes';
 import Features, {type FeatureItem} from '@site/src/data/features';
 import Heading from '@theme/Heading';
-
 import styles from './styles.module.css';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
@@ -975,29 +974,6 @@ function FeaturesContainer() {
 	);
 }
 
-function VideoContainer() {
-	return (
-	  <div className="container text--center margin-top--xl">
-		<div className="row">
-		  <div className="col">
-			<Heading as="h2">
-			  <Translate>观看介绍视频</Translate>
-			</Heading>
-			<div className="video-container">
-			  <LiteYouTubeEmbed
-				id="T2Z-wRhmI_k"
-				params="autoplay=1&autohide=1&showinfo=0&rel=0"
-				title="trpc"
-				poster="maxresdefault"
-				webp
-			  />
-			</div>
-		  </div>
-		</div>
-	  </div>
-	);
-  }
-
 
 
 export default function Home(): JSX.Element {
@@ -1010,6 +986,7 @@ export default function Home(): JSX.Element {
       <main>
 	  <Hero/>
 	  <FeaturesContainer />
+	  <MapComponent/>
 	  <Platforms/>
         <div className={styles.section}>
         </div>
